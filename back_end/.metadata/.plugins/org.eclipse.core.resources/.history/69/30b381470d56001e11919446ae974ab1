@@ -1,0 +1,29 @@
+package com.testo.controller;
+
+public class User_Controller {
+	
+	
+	
+	
+	
+		
+		@Autowired
+		private CompanyService srvice;
+		
+		
+		@PostMapping("/company")
+		public Company addCompany(@RequestBody Company user)
+		{
+			System.out.println("password "+user.getPassword());
+			
+			System.out.println("Controller called");
+			return srvice.addCompany(user);
+			
+			
+		
+		
+		
+
+	}
+
+}

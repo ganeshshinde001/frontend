@@ -1,0 +1,9 @@
+package com.testo.service;
+
+import com.testo.entity.Lead;
+
+public interface Lead_service {
+	
+	Lead addLead(Lead transientUser);
+
+}

@@ -1,0 +1,5 @@
+package com.testo.service;
+
+public interface Lead_service {
+
+}

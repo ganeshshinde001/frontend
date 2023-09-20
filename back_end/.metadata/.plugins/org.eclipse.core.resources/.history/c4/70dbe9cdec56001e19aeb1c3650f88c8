@@ -1,0 +1,33 @@
+package com.testo.service;
+
+
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.testo.dao.Lead_Repo;
+import com.testo.entity.Lead;
+
+
+@Service
+@Transactional
+public class Lead_serviceImpl implements Lead_service {
+
+	
+	@Autowired
+	private Lead_Repo leadRepo;
+	@Override
+	public Lead addLead(Lead transientUser) {
+		// TODO Auto-generated method stub
+		return leadRepo.save(transientUser);
+	}
+	@Override
+	public List<Lead> getAllLead() {
+		
+		return leadRepo.findAll();
+	}
+
+}

@@ -1,0 +1,7 @@
+package com.testo.service;
+
+public interface Lead_service {
+	
+	Lead addLead(AppUser transientUser);
+
+}

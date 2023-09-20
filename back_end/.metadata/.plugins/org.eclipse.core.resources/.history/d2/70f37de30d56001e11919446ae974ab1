@@ -1,0 +1,25 @@
+package com.testo.controller;
+
+import com.testo.entity.Lead;
+
+public class User_Controller {
+	
+	
+
+		
+		@PostMapping("/company")
+		public Lead addLead(@RequestBody Lead user)
+		{
+			System.out.println("password "+user.getPassword());
+			
+			System.out.println("Controller called");
+			return srvice.addCompany(user);
+			
+			
+		
+		
+		
+
+	}
+
+}

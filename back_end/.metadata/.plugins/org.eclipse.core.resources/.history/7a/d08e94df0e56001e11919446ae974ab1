@@ -1,0 +1,33 @@
+package com.testo.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+
+import com.testo.entity.Lead;
+import com.testo.service.Lead_service;
+
+public class User_Controller {
+	
+	
+	@Autowired 
+	private Lead_service service;
+	
+
+		
+		@PostMapping("/company")
+		public Lead addLead(@RequestBody Lead user)
+		{
+			//System.out.println("password "+user.getPassword());
+			
+			System.out.println("Controller called");
+			return service.addLead(user);
+			
+			
+		
+		
+		
+
+	}
+
+}

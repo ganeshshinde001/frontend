@@ -1,0 +1,13 @@
+package com.testo.service;
+
+import com.testo.entity.Lead;
+
+public class Lead_serviceImpl implements Lead_service {
+
+	@Override
+	public Lead addLead(Lead transientUser) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
